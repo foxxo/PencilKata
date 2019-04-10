@@ -7,6 +7,7 @@ public class Pencil {
     int length;
     int eraserDurability;
 
+
     Pencil(int pDurability, int pLength, int pEraserDurability) {
         maxDurability = pDurability;
         durability = pDurability;
@@ -33,7 +34,7 @@ public class Pencil {
             else
                 textToWrite += " ";
         }
-        target.pageText += textToWrite;
+        target.pageText = textToWrite;
     }
 
     public void sharpen()
@@ -66,6 +67,15 @@ public class Pencil {
 
         newText += new String(erasedText) + target.pageText.substring(replacementIndex + text.length());
 
+        target.pageText = newText;
+    }
+
+    public void eraseAndEdit(Paper target, String text, String replacement)
+    {
+        int editingPosition = target.pageText.lastIndexOf(text);
+        eraseFromPage(target, text);
+
+        String newText = target.pageText.substring(0, editingPosition) + replacement + target.pageText.substring(editingPosition + text.length());
         target.pageText = newText;
     }
 }

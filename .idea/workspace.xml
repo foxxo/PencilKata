@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/kata/Pencil.java" line="27" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/kata/Pencil.java" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="424a8731-96b1-46c0-b4c2-565fd40ead81" name="Default Changelist" comment="">
@@ -43,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kata/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="492">
+              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kata/PencilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="102" column="51" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
+            <state relative-caret-position="543">
+              <caret line="112" column="26" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/kata/PencilMain.java" />
         <option value="$PROJECT_DIR$/src/com/kata/Paper.java" />
-        <option value="$PROJECT_DIR$/src/com/kata/Pencil.java" />
         <option value="$PROJECT_DIR$/src/com/kata/PencilTest.java" />
+        <option value="$PROJECT_DIR$/src/com/kata/Pencil.java" />
       </list>
     </option>
   </component>
@@ -145,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation">
+  <component name="RunManager" selected="JUnit.PencilTest.PencilCanEnterNewLettersOverErased">
     <configuration name="PencilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilKata" />
       <extension name="coverage">
@@ -157,6 +157,22 @@
       <option name="PACKAGE_NAME" value="com.kata" />
       <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilKata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kata" />
+      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
+      <option name="METHOD_NAME" value="PencilCanEnterNewLettersOverErased" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,36 +225,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PencilTest.PencilSharpenedToStubGainsNoDurability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilKata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kata.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kata" />
-      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
-      <option name="METHOD_NAME" value="PencilSharpenedToStubGainsNoDurability" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.PencilTest" />
-      <item itemvalue="JUnit.PencilTest.PencilSharpenedToStubGainsNoDurability" />
       <item itemvalue="JUnit.PencilTest.PencilCanEraseLastIncidenceOfText" />
       <item itemvalue="JUnit.PencilTest.PencilEraserLosesDurabilityBackwards" />
       <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
+      <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
         <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
         <item itemvalue="JUnit.PencilTest.PencilEraserLosesDurabilityBackwards" />
         <item itemvalue="JUnit.PencilTest" />
         <item itemvalue="JUnit.PencilTest.PencilCanEraseLastIncidenceOfText" />
-        <item itemvalue="JUnit.PencilTest.PencilSharpenedToStubGainsNoDurability" />
       </list>
     </recent_temporary>
   </component>
@@ -256,9 +256,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilTest_PencilCanEraseLastIncidenceOfText - 2019.04.10 at 10h 44m 46s.xml">
-      <configuration name="PencilTest.PencilCanEraseLastIncidenceOfText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PencilTest - 2019.04.10 at 10h 52m 09s.xml">
       <configuration name="PencilTest" configurationId="JUnit" />
     </history-entry>
@@ -285,6 +282,9 @@
     </history-entry>
     <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 11h 05m 03s.xml">
       <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PencilTest_PencilEraserIgnoresWhitespaceDegradation - 2019.04.10 at 11h 10m 24s.xml">
+      <configuration name="PencilTest.PencilEraserIgnoresWhitespaceDegradation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -338,20 +338,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kata/Pencil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kata/PencilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="102" column="51" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
+        <state relative-caret-position="543">
+          <caret line="112" column="26" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kata/Pencil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
         </state>
       </provider>
     </entry>

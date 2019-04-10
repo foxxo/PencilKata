@@ -102,4 +102,12 @@ public class PencilTest {
 
         assertEquals("t e   t", testPage.pageText);
     }
+
+    @Test public void PencilCanEnterNewLettersOverErased()
+    {
+        testPencil.writeToPage(testPage, "abcd");
+        testPencil.sharpen();
+        testPencil.eraseAndEdit(testPage, "b", "x");
+        assertEquals("axcd", testPage.pageText);
+    }
 }
