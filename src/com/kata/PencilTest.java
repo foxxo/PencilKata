@@ -12,7 +12,7 @@ public class PencilTest {
     @Before
     public void setUp() {
         testPage = new Paper();
-        testPencil = new Pencil();
+        testPencil = new Pencil(4);
     }
 
     @Test
@@ -29,5 +29,15 @@ public class PencilTest {
         assertEquals("testTEST", testPage.pageText);
 
     }
+
+    @Test
+    public void PencilLosesDurabilityWhenWriting()
+    {
+        testPencil.writeToPage(testPage, "TEST");
+        assertEquals(0,testPencil.durability);
+
+    }
+
+
 
 }
