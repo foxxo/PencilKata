@@ -38,6 +38,13 @@ public class PencilTest {
 
     }
 
+    @Test
+    public void PencilDurabilityLossExemptedForWhiteSpace()
+    {
+        testPencil.writeToPage(testPage, "T \nT");
+        assertEquals(2, testPencil.durability);
+    }
+
 
 
 }

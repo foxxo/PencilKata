@@ -11,6 +11,7 @@ public class Pencil {
     public void writeToPage(Paper target, String text)
     {
         target.pageText += text;
+        text = text.replaceAll("\\s+","");
         durability -= text.length();
     }
 }
