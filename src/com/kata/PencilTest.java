@@ -12,7 +12,7 @@ public class PencilTest {
     @Before
     public void setUp() {
         testPage = new Paper();
-        testPencil = new Pencil(4);
+        testPencil = new Pencil(4, 1);
     }
 
     @Test
@@ -65,6 +65,16 @@ public class PencilTest {
         testPencil.writeToPage(testPage, "Test");
         testPencil.sharpen();
         assertEquals(testPencil.durability, 4);
+    }
+
+    @Test
+    public void PencilSharpenedToStubGainsNoDurability()
+    {
+        testPencil.writeToPage(testPage, "Test");
+        testPencil.sharpen();
+        testPencil.writeToPage(testPage, "Test");
+        testPencil.sharpen();
+        assertEquals(testPencil.durability, 0);
     }
 
 }

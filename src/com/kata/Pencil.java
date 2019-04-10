@@ -4,10 +4,12 @@ public class Pencil {
 
     int durability;
     int maxDurability;
+    int length;
 
-    Pencil(int pDurability) {
+    Pencil(int pDurability, int pLength) {
         maxDurability = pDurability;
         durability = pDurability;
+        length = pLength;
     }
 
     public void writeToPage(Paper target, String text)
@@ -34,6 +36,8 @@ public class Pencil {
 
     public void sharpen()
     {
-        durability = maxDurability;
+        length--;
+        if(length >= 0)
+            durability = maxDurability;
     }
 }
