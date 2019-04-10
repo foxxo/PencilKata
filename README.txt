@@ -1,4 +1,6 @@
 PencilKata
 
-Import the PencilKata project into IntelliJ. All test functions
-are found in the PencilTest class.
+From the command line, navigate to the folder containing this README file.
+enter the following command:
+java -jar PencilKata.jar
+The program will run all unit tests and report on their success or failure.
