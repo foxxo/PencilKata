@@ -5,11 +5,13 @@ public class Pencil {
     int durability;
     int maxDurability;
     int length;
+    int eraserDurability;
 
-    Pencil(int pDurability, int pLength) {
+    Pencil(int pDurability, int pLength, int pEraserDurability) {
         maxDurability = pDurability;
         durability = pDurability;
         length = pLength;
+        eraserDurability = pEraserDurability;
     }
 
     public void writeToPage(Paper target, String text)
@@ -46,9 +48,22 @@ public class Pencil {
         int replacementIndex = target.pageText.lastIndexOf(text);
 
         String newText = target.pageText.substring(0,replacementIndex);
-        for(int i = 0; i < text.length(); i++)
-            newText += " ";
-        newText += target.pageText.substring(replacementIndex + text.length());
+
+        char[] erasedText = new char[text.length()];
+        for(int i = text.length()-1; i >= 0; i--)
+        {
+            if(eraserDurability > 0) {
+                erasedText[i] = ' ';
+                eraserDurability--;
+            }
+            else
+            {
+                erasedText[i] = text.charAt(i);
+            }
+        }
+
+
+        newText += new String(erasedText) + target.pageText.substring(replacementIndex + text.length());
 
         target.pageText = newText;
     }

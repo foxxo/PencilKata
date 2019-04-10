@@ -12,7 +12,7 @@ public class PencilTest {
     @Before
     public void setUp() {
         testPage = new Paper();
-        testPencil = new Pencil(4, 1);
+        testPencil = new Pencil(4, 1, 1);
     }
 
     @Test
@@ -84,5 +84,14 @@ public class PencilTest {
         testPencil.eraseFromPage(testPage, "t");
 
         assertEquals("tes ", testPage.pageText);
+    }
+
+    @Test public void PencilEraserLosesDurabilityBackwards()
+    {
+        testPencil.writeToPage(testPage, "test");
+        testPencil.eraseFromPage(testPage, "test");
+
+        assertEquals("tes ", testPage.pageText);
+        assertEquals(0, testPencil.eraserDurability);
     }
 }
