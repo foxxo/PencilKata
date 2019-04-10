@@ -52,7 +52,8 @@ public class Pencil {
         char[] erasedText = new char[text.length()];
         for(int i = text.length()-1; i >= 0; i--)
         {
-            if(eraserDurability > 0) {
+            if(eraserDurability > 0 && !Character.isWhitespace(text.charAt(i)))
+            {
                 erasedText[i] = ' ';
                 eraserDurability--;
             }

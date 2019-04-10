@@ -94,4 +94,12 @@ public class PencilTest {
         assertEquals("tes ", testPage.pageText);
         assertEquals(0, testPencil.eraserDurability);
     }
+
+    @Test public void PencilEraserIgnoresWhitespaceDegradation()
+    {
+        testPencil.writeToPage(testPage, "t e s t");
+        testPencil.eraseFromPage(testPage, "s ");
+
+        assertEquals("t e   t", testPage.pageText);
+    }
 }
