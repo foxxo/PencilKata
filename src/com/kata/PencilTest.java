@@ -18,7 +18,7 @@ public class PencilTest {
     @Test
     public void PencilWritesTextToBlankPage() {
         testPencil.writeToPage(testPage, "test");
-        assertEquals(testPage.pageText, "test");
+        assertEquals("test", testPage.pageText);
     }
 
 
@@ -105,9 +105,18 @@ public class PencilTest {
 
     @Test public void PencilCanEnterNewLettersOverErased()
     {
+        testPencil.eraserDurability = 2;
         testPencil.writeToPage(testPage, "abcd");
         testPencil.sharpen();
-        testPencil.eraseAndEdit(testPage, "b", "x");
-        assertEquals("axcd", testPage.pageText);
+        testPencil.eraseAndEdit(testPage, "bc", "x");
+        assertEquals("ax d", testPage.pageText);
+    }
+
+    @Test public void EraseAndReplaceCollisionsBecomeAmpersands()
+    {
+        testPencil.writeToPage(testPage, "abcd");
+        testPencil.sharpen();
+        testPencil.eraseAndEdit(testPage, "a", "xx");
+        assertEquals("x@cd", testPage.pageText);
     }
 }

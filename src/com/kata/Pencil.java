@@ -34,7 +34,7 @@ public class Pencil {
             else
                 textToWrite += " ";
         }
-        target.pageText = textToWrite;
+        target.pageText += textToWrite;
     }
 
     public void sharpen()
@@ -73,9 +73,28 @@ public class Pencil {
     public void eraseAndEdit(Paper target, String text, String replacement)
     {
         int editingPosition = target.pageText.lastIndexOf(text);
+        System.out.println(target.pageText);
         eraseFromPage(target, text);
+        System.out.println(target.pageText);
+        String newText = target.pageText.substring(0, editingPosition);
 
-        String newText = target.pageText.substring(0, editingPosition) + replacement + target.pageText.substring(editingPosition + text.length());
+
+        for(int i = 0; i < replacement.length(); i++)
+        {
+            System.out.print("replacing \'" + target.pageText.charAt(editingPosition + i) + "\' with \'");
+            if(Character.isWhitespace(target.pageText.charAt(editingPosition + i)))
+                newText+= replacement.charAt(i);
+            else
+                newText += "@";
+            System.out.println(newText.charAt(newText.length()-1) + "\'");
+        }
+
+
+
+        for(int i = 0; i < text.length() - replacement.length(); i++)
+            newText += " ";
+
+        newText += target.pageText.substring(editingPosition + Math.max(replacement.length(), text.length()));
         target.pageText = newText;
     }
 }

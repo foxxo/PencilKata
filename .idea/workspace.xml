@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kata/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="407">
+              <caret line="88" column="73" lean-forward="true" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kata/PencilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="112" column="26" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+            <state relative-caret-position="322">
+              <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilTest.PencilCanEnterNewLettersOverErased">
+  <component name="RunManager" selected="JUnit.PencilTest">
     <configuration name="PencilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilKata" />
       <extension name="coverage">
@@ -161,6 +161,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PencilTest.EraseAndReplaceCollisionsBecomeAmpersands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilKata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kata" />
+      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
+      <option name="METHOD_NAME" value="EraseAndReplaceCollisionsBecomeAmpersands" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PencilTest.PencilAttendTextToWrittenPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PencilKata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kata" />
+      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
+      <option name="METHOD_NAME" value="PencilAttendTextToWrittenPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilKata" />
       <extension name="coverage">
@@ -172,22 +204,6 @@
       <option name="PACKAGE_NAME" value="com.kata" />
       <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
       <option name="METHOD_NAME" value="PencilCanEnterNewLettersOverErased" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PencilTest.PencilCanEraseLastIncidenceOfText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilKata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kata.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kata" />
-      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
-      <option name="METHOD_NAME" value="PencilCanEraseLastIncidenceOfText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,36 +225,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PencilKata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kata.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kata" />
-      <option name="MAIN_CLASS_NAME" value="com.kata.PencilTest" />
-      <option name="METHOD_NAME" value="PencilEraserLosesDurabilityBackwards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.PencilTest" />
-      <item itemvalue="JUnit.PencilTest.PencilCanEraseLastIncidenceOfText" />
-      <item itemvalue="JUnit.PencilTest.PencilEraserLosesDurabilityBackwards" />
       <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
       <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
+      <item itemvalue="JUnit.PencilTest.EraseAndReplaceCollisionsBecomeAmpersands" />
+      <item itemvalue="JUnit.PencilTest.PencilAttendTextToWrittenPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
-        <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
-        <item itemvalue="JUnit.PencilTest.PencilEraserLosesDurabilityBackwards" />
         <item itemvalue="JUnit.PencilTest" />
-        <item itemvalue="JUnit.PencilTest.PencilCanEraseLastIncidenceOfText" />
+        <item itemvalue="JUnit.PencilTest.EraseAndReplaceCollisionsBecomeAmpersands" />
+        <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
+        <item itemvalue="JUnit.PencilTest.PencilAttendTextToWrittenPage" />
+        <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
       </list>
     </recent_temporary>
   </component>
@@ -256,35 +256,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PencilTest - 2019.04.10 at 10h 52m 09s.xml">
+    <history-entry file="PencilTest - 2019.04.10 at 11h 33m 08s.xml">
       <configuration name="PencilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 10h 52m 53s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilAttendTextToWrittenPage - 2019.04.10 at 11h 33m 39s.xml">
+      <configuration name="PencilTest.PencilAttendTextToWrittenPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 10h 53m 33s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilAttendTextToWrittenPage - 2019.04.10 at 11h 33m 43s.xml">
+      <configuration name="PencilTest.PencilAttendTextToWrittenPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 10h 53m 58s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest - 2019.04.10 at 11h 35m 12s.xml">
+      <configuration name="PencilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 10h 58m 04s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest - 2019.04.10 at 11h 35m 53s.xml">
+      <configuration name="PencilTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 11h 02m 58s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilCanEnterNewLettersOverErased - 2019.04.10 at 11h 42m 30s.xml">
+      <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 11h 03m 55s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilCanEnterNewLettersOverErased - 2019.04.10 at 11h 43m 58s.xml">
+      <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 11h 04m 34s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilCanEnterNewLettersOverErased - 2019.04.10 at 11h 44m 27s.xml">
+      <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserLosesDurabilityBackwards - 2019.04.10 at 11h 05m 03s.xml">
-      <configuration name="PencilTest.PencilEraserLosesDurabilityBackwards" configurationId="JUnit" />
+    <history-entry file="PencilTest_PencilCanEnterNewLettersOverErased - 2019.04.10 at 11h 45m 29s.xml">
+      <configuration name="PencilTest.PencilCanEnterNewLettersOverErased" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PencilTest_PencilEraserIgnoresWhitespaceDegradation - 2019.04.10 at 11h 10m 24s.xml">
-      <configuration name="PencilTest.PencilEraserIgnoresWhitespaceDegradation" configurationId="JUnit" />
+    <history-entry file="PencilTest_EraseAndReplaceCollisionsBecomeAmpersands - 2019.04.10 at 11h 45m 47s.xml">
+      <configuration name="PencilTest.EraseAndReplaceCollisionsBecomeAmpersands" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -296,7 +296,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24975026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24975026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -304,7 +304,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32978722" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,6 +320,13 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/kata/PencilMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kata/Paper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -331,17 +338,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kata/PencilMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kata/PencilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="112" column="26" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -350,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kata/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        <state relative-caret-position="407">
+          <caret line="88" column="73" lean-forward="true" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
         </state>
       </provider>
     </entry>
