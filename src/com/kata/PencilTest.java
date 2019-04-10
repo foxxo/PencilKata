@@ -1,17 +1,33 @@
 package com.kata;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PencilTest {
 
-    @Test
-    public void PencilWritesTextToBlankPage()
-    {
-        Paper testPage = new Paper();
-        Pencil testPencil =  new Pencil();
+    Paper testPage;
+    Pencil testPencil;
 
+    @Before
+    public void setUp() {
+        testPage = new Paper();
+        testPencil = new Pencil();
+    }
+
+    @Test
+    public void PencilWritesTextToBlankPage() {
         testPencil.writeToPage(testPage, "TEST");
         assertEquals("TEST", testPage.pageText);
     }
+
+
+    @Test
+    public void PencilAttendTextToWrittenPage() {
+        testPage.pageText = "test";
+        testPencil.writeToPage(testPage, "TEST");
+        assertEquals("testTEST", testPage.pageText);
+
+    }
+
 }
