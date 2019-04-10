@@ -18,7 +18,7 @@ public class PencilTest {
     @Test
     public void PencilWritesTextToBlankPage() {
         testPencil.writeToPage(testPage, "test");
-        assertEquals("test", testPage.pageText);
+        assertEquals(testPage.pageText, "test");
     }
 
 
@@ -34,7 +34,7 @@ public class PencilTest {
     public void PencilLosesDurabilityWhenWriting()
     {
         testPencil.writeToPage(testPage, "test");
-        assertEquals(0,testPencil.durability);
+        assertEquals(testPencil.durability, 0);
 
     }
 
@@ -42,21 +42,21 @@ public class PencilTest {
     public void PencilDurabilityLossExemptedForWhiteSpace()
     {
         testPencil.writeToPage(testPage, "t \nt");
-        assertEquals(2, testPencil.durability);
+        assertEquals(testPencil.durability, 2);
     }
 
     @Test
     public void PencilAtZeroDurabilityWritesWhitespace()
     {
         testPencil.writeToPage(testPage, "testtest");
-        assertEquals("test    ", testPage.pageText);
+        assertEquals(testPage.pageText, "test    ");
     }
 
     @Test
     public void PencilLosesDoubleDurabilityForUpperCase()
     {
         testPencil.writeToPage(testPage, "Test");
-        assertEquals(testPencil.durability, 0);
+        assertEquals(0, testPencil.durability);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class PencilTest {
     {
         testPencil.writeToPage(testPage, "Test");
         testPencil.sharpen();
-        assertEquals(testPencil.durability, 4);
+        assertEquals(4, testPencil.durability);
     }
 
     @Test
@@ -74,7 +74,15 @@ public class PencilTest {
         testPencil.sharpen();
         testPencil.writeToPage(testPage, "Test");
         testPencil.sharpen();
-        assertEquals(testPencil.durability, 0);
+        assertEquals(0, testPencil.durability);
     }
 
+    @Test
+    public void PencilCanEraseLastIncidenceOfText()
+    {
+        testPencil.writeToPage(testPage,"test");
+        testPencil.eraseFromPage(testPage, "t");
+
+        assertEquals("tes ", testPage.pageText);
+    }
 }

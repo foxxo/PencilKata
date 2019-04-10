@@ -40,4 +40,16 @@ public class Pencil {
         if(length >= 0)
             durability = maxDurability;
     }
+
+    public void eraseFromPage(Paper target, String text)
+    {
+        int replacementIndex = target.pageText.lastIndexOf(text);
+
+        String newText = target.pageText.substring(0,replacementIndex);
+        for(int i = 0; i < text.length(); i++)
+            newText += " ";
+        newText += target.pageText.substring(replacementIndex + text.length());
+
+        target.pageText = newText;
+    }
 }
