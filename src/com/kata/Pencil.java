@@ -3,10 +3,10 @@ package com.kata;
 public class Pencil {
 
     int durability;
-
+    int maxDurability;
 
     Pencil(int pDurability) {
-
+        maxDurability = pDurability;
         durability = pDurability;
     }
 
@@ -32,5 +32,8 @@ public class Pencil {
         target.pageText += textToWrite;
     }
 
-
+    public void sharpen()
+    {
+        durability = maxDurability;
+    }
 }

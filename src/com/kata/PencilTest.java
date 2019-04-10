@@ -59,6 +59,12 @@ public class PencilTest {
         assertEquals(testPencil.durability, 0);
     }
 
-
+    @Test
+    public void PencilSharpeningReturnsToFullDurability()
+    {
+        testPencil.writeToPage(testPage, "Test");
+        testPencil.sharpen();
+        assertEquals(testPencil.durability, 4);
+    }
 
 }
