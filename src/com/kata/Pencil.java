@@ -73,20 +73,20 @@ public class Pencil {
     public void eraseAndEdit(Paper target, String text, String replacement)
     {
         int editingPosition = target.pageText.lastIndexOf(text);
-        System.out.println(target.pageText);
+
         eraseFromPage(target, text);
-        System.out.println(target.pageText);
+
         String newText = target.pageText.substring(0, editingPosition);
 
 
         for(int i = 0; i < replacement.length(); i++)
         {
-            System.out.print("replacing \'" + target.pageText.charAt(editingPosition + i) + "\' with \'");
+            
             if(Character.isWhitespace(target.pageText.charAt(editingPosition + i)))
                 newText+= replacement.charAt(i);
             else
                 newText += "@";
-            System.out.println(newText.charAt(newText.length()-1) + "\'");
+
         }
 
 

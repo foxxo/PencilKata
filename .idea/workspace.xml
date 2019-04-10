@@ -86,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="405" />
     <option name="y" value="95" />
     <option name="width" value="1750" />
@@ -145,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PencilTest">
+  <component name="RunManager" selected="JUnit.PencilTest.PencilCanEnterNewLettersOverErased">
     <configuration name="PencilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PencilKata" />
       <extension name="coverage">
@@ -234,9 +234,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
         <item itemvalue="JUnit.PencilTest" />
         <item itemvalue="JUnit.PencilTest.EraseAndReplaceCollisionsBecomeAmpersands" />
-        <item itemvalue="JUnit.PencilTest.PencilCanEnterNewLettersOverErased" />
         <item itemvalue="JUnit.PencilTest.PencilAttendTextToWrittenPage" />
         <item itemvalue="JUnit.PencilTest.PencilEraserIgnoresWhitespaceDegradation" />
       </list>
